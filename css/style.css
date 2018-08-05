@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'NFS font';
+    src: url('fonts/NFSfont.eot');
+    src: url('fonts/NFSfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/NFSfont.woff2') format('woff2'),
+        url('fonts/NFSfont.woff') format('woff'),
+        url('fonts/NFSfont.ttf') format('truetype'),
+        url('fonts/NFSfont.svg#NFSfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding:0;
+}
+
+.button {
+    font-family: NFS font,Arial,sans-serif;
+    width: 270px;
+    height: 35px;
+    background-color: #D50000;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    font-size: 43px;
+    text-align: center;
+    line-height: 35px;
+    padding: 15px 15px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    -webkit-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.button:hover {
+    background-color:#fff;
+    color:#D50000;
+    border:2px solid #D50000;
+    -webkit-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.button:active {
+    -webkit-transform: translateY(4px);
+        -ms-transform: translateY(4px);
+            transform: translateY(4px);
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.button::-moz-selection {
+   background: transparent;
+}
+
+.button::selection {
+   background: transparent;
+}
+.button::-moz-selection {
+   background: transparent;
+}
+
+
+.preview-wrapper {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+}
+
+.canvas-wrapper {
+    margin: 0 auto;
+    opacity:1;
+    -webkit-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.loading {
+    opacity:0;
+    -webkit-transform: scale(0.6);
+        -ms-transform: scale(0.6);
+            transform: scale(0.6);
+    -webkit-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out; 
+}
