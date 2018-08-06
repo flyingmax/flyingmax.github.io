@@ -45,10 +45,9 @@ function drawImage(src , x , y, next){
 
 function getGeneratedImg(){
     var imgDataS = screen.getElementsByTagName('canvas');
-     imgDataS = imgDataS[0];
+    imgDataS = imgDataS[0];
     var imgData = imgDataS.toDataURL("img/png");
-    screen.style.background = 'url('+imgData+');';
-	console.log(imgData);
+    screen.style.backgroundImage = "url('+"imgData"+')";
 }
 
 
