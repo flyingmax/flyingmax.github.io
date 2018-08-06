@@ -23,6 +23,7 @@ function render(windowSrc,spoilerSrc,shadowSrc,neonSrc,bodySrc,bumperSrc,aerogra
 								drawImage(rimsSrc,0,0,function(){
     									drawImage(lightSrc,0,0,function(){
 										screen.classList.remove('loading');});
+                                        getGeneratedImg();
 								});
 							 }); 
 						});
@@ -40,6 +41,13 @@ function drawImage(src , x , y, next){
         ctx.drawImage(img, x, y, 600, 600);//рисуем изображение на холсте от левого верхнего края
 	setTimeout(next,100);
     };
+}
+
+function getGeneratedImg(){
+    var imgDataS = screen.getElementsByTagName('canvas');
+     imgDataS = imgDataS[0];
+    var imgData = imgDataS.toDataURL("img/png");
+    screen.style.backgroundImage = imgData;
 }
 
 
