@@ -47,7 +47,7 @@ function getGeneratedImg(){
     var imgDataS = screen.getElementsByTagName('canvas');
      imgDataS = imgDataS[0];
     var imgData = imgDataS.toDataURL("img/png");
-    screen.style.backgroundImage = imgData;
+    screen.style.backgroundImage = 'url('+imgData+');';
 	console.log(imgData);
 }
 
