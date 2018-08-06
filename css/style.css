@@ -84,7 +84,7 @@ body {
 }
 
 .loading {
-    opacity:0.2;
+    opacity:0.3;
     -webkit-transform: scale(0.8);
         -ms-transform: scale(0.8);
             transform: scale(0.8);
