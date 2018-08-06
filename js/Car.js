@@ -7,8 +7,8 @@ function initCanvas(id) {
     return screenCanvas.getContext('2d');//получаем контекст для рисования;
 }
 
-var ctx = initCanvas('dapcarPreview');
-var screen = document.getElementById('dapcarPreview');
+var ctx = initCanvas('carPreview');
+var screen = document.getElementById('carPreview');
 
 function render(windowSrc,spoilerSrc,shadowSrc,neonSrc,bodySrc,bumperSrc,aerographySrc,lightSrc,rimsSrc){ 
     ctx.clearRect(0,0,600,600);
@@ -38,7 +38,7 @@ function drawImage(src , x , y, next){
     img.src = src;
     img.onload = function () {
         ctx.drawImage(img, x, y, 600, 600);//рисуем изображение на холсте от левого верхнего края
-	next();
+	setTimeout(next,100);
     };
 }
 
@@ -85,7 +85,7 @@ var types = {
    
 
 function renderCar() { 
-   var randomTypeValue = randomType(types,4); //делаем один и тот же тип у папки и у названия файла, если 3 типа
+    var randomTypeValue = randomType(types,4); //делаем один и тот же тип у папки и у названия файла, если 3 типа
     var windowSrc = 'ford/'+'window/'+'window_'+ catalog + '_'+randomElement1(13);
     var spoilerSrc = 'ford/'+'spoiler/'+'type'+randomType(types,1)+'/'+'spo_'+ catalog + '_'+randomType(types,1)+'_'+randomElement0(12);
     var shadowSrc = 'ford/'+'shadow/1500w/'+'shadow_'+ catalog + '_'+randomElement1(1);
