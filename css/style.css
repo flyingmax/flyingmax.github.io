@@ -23,6 +23,7 @@ body {
     color: #fff;
     display: block;
     margin: 0 auto;
+    margin-bottom:20px;
     font-size: 43px;
     text-align: center;
     line-height: 35px;
@@ -77,17 +78,17 @@ body {
 .canvas-wrapper {
     margin: 0 auto;
     opacity:1;
-    -webkit-transition: all 0.15s ease-in-out;
-    -o-transition: all 0.15s ease-in-out;
-    transition: all 0.15s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .loading {
-    opacity:0;
-    -webkit-transform: scale(0.6);
-        -ms-transform: scale(0.6);
-            transform: scale(0.6);
-    -webkit-transition: all 0.15s ease-in-out;
-    -o-transition: all 0.15s ease-in-out;
-    transition: all 0.15s ease-in-out; 
+    opacity:0.5;
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; 
 }
